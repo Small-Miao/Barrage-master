@@ -188,10 +188,11 @@ namespace DouyuBarrage
         {
             foreach (string response in responses)
             {
-                if (response.Contains("msgrepeaterlist"))
+                //
+                if (response.Contains("msgiplist"))
                 {
                     //获取弹幕服务器地址
-                    OnLogEvent("获取弹幕服务器地址 ...");
+                    OnLogEvent("获取弹幕服务器地址 ..."); 
                     string danmakuServerStr = SttCode.deFilterStr(SttCode.deFilterStr(response));
                     danmakuServers = ResponseParser.ParseDanmakuServer(danmakuServerStr);
                     OnLogEvent("获取到 " + danmakuServers.Count + " 个服务器地址 ...");

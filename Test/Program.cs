@@ -13,7 +13,7 @@ namespace Test
     {
         static void Main(string[] args)
         {
-            DouyuConfig.room = 111716;
+            DouyuConfig.room = 78561;
 
             AuthSocket auth = new AuthSocket();
             auth.OnReady += (sender,e)=> {
